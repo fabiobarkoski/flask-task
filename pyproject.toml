@@ -9,6 +9,8 @@ python = "3.9.6"
 Flask = "^2.0.1"
 requests = "^2.26.0"
 numpy = "^1.21.2"
+turfpy = "^0.0.7"
+gunicorn = "^20.1.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

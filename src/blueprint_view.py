@@ -1,5 +1,7 @@
 from flask import Blueprint
-from flask import request
+from turfpy.measurement import boolean_point_in_polygon
+from geojson import Point, Feature
+from mkad_polygon import polygon
 import numpy as np
 from numpy.lib.shape_base import split
 import requests
@@ -26,35 +28,35 @@ def calc_distance(lat1,lat2,lon1,lon2):
     return round(d)
  
 
-@distance_bp.route('/', methods=['GET'])
-def distante():
-    coordinate1 = request.args.get('from')
-    coordinate2 = request.args.get('to')
-    list1 = []
+@distance_bp.route('/<coordinate>', methods=['GET'])
+def distante(coordinate):
+    list1 = [37.842762,55.774558]
     list2 = []
 
-    if ',' in coordinate1:
-        coord1_list = coordinate1.split(',')
-        list1.append(coord1_list[0])
-        list1.append(coord1_list[1])
+    bol = 0
+
+    if ',' in coordinate:
+        coord_list = coordinate.split(',')      
+        list2.append(coord_list[0])
+        list2.append(coord_list[1])
+        point = Feature(geometry=Point((float(list2[0]), float(list2[1]))))
+        print(boolean_point_in_polygon(point, polygon))
+        if boolean_point_in_polygon(point, polygon) == True:
+            bol +=1
+        
     else:
-        r1 = requests.get(f'https://api.mapbox.com/geocoding/v5/mapbox.places/{coordinate1}.json?access_token=pk.eyJ1IjoiYmZhYmlvIiwiYSI6ImNrc2txaWQzeTExcW0ybm85cG9nNzd1ZjgifQ.bTBrNVZt0YFEDn-7YZIk_w')
-        response1 = r1.json()
-        list1.append(response1['features'][0]['center'][0])
-        list1.append(response1['features'][0]['center'][1])
+        r = requests.get(f'https://api.mapbox.com/geocoding/v5/mapbox.places/{coordinate}.json?access_token=pk.eyJ1IjoiYmZhYmlvIiwiYSI6ImNrc2txaWQzeTExcW0ybm85cG9nNzd1ZjgifQ.bTBrNVZt0YFEDn-7YZIk_w')
+        response = r.json()
+        list2.append(response['features'][0]['center'][0])
+        list2.append(response['features'][0]['center'][1])
+        point = Feature(geometry=Point((float(list2[0]), float(list2[1]))))
+        print(boolean_point_in_polygon(point, polygon))
+        if boolean_point_in_polygon(point, polygon) == True:
+            bol +=1
 
-    if ',' in coordinate2:
-        coord2_list = coordinate2.split(',')
-        list2.append(coord2_list[0])
-        list2.append(coord2_list[1])    
-    else:
-        r2 = requests.get(f'https://api.mapbox.com/geocoding/v5/mapbox.places/{coordinate2}.json?access_token=pk.eyJ1IjoiYmZhYmlvIiwiYSI6ImNrc2txaWQzeTExcW0ybm85cG9nNzd1ZjgifQ.bTBrNVZt0YFEDn-7YZIk_w')
-        response2 = r2.json()
-        list2.append(response2['features'][0]['center'][0])
-        list2.append(response2['features'][0]['center'][1])
+    save = str((calc_distance(float(list1[1]), float(list2[0]), float(list1[0]), float(list2[1]))))
 
+    if bol == 0:
+        logger.info(f'The distance from Moscow Ring Road to {coordinate} is {save} km')
 
-    save = str((calc_distance(float(list1[1]), float(list2[1]), float(list1[0]), float(list2[0]))))
-
-    logger.info(f'The distance from {coordinate1} to {coordinate2} is {save} km')
-    return save
+    return f'{save} km e os bol: {bol}'

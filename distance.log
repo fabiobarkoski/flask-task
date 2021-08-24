@@ -1,441 +1,49 @@
-2021-08-20 15:25:41,213:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2021-08-20 15:25:46,943:INFO:blueprint_view.py:logged!
-2021-08-20 15:25:46,944:INFO:_internal.py:127.0.0.1 - - [20/Aug/2021 15:25:46] "GET / HTTP/1.1" 200 -
-2021-08-20 16:40:01,989:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2021-08-20 16:40:31,014:ERROR:app.py:Exception on /37.841828,55.747399 [GET]
-Traceback (most recent call last):
-  File "/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/.venv/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/.venv/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/.venv/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/.venv/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
-  File "/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py", line 24, in distante
-    logger.info(response['features']['center'])
-TypeError: list indices must be integers or slices, not str
-2021-08-20 16:40:31,017:INFO:_internal.py:127.0.0.1 - - [20/Aug/2021 16:40:31] "[35m[1mGET /37.841828,55.747399 HTTP/1.1[0m" 500 -
-2021-08-20 16:41:42,077:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2021-08-20 16:41:42,078:INFO:_internal.py: * Restarting with stat
-2021-08-20 16:41:42,344:WARNING:_internal.py: * Debugger is active!
-2021-08-20 16:41:42,400:INFO:_internal.py: * Debugger PIN: 687-463-342
-2021-08-20 16:41:46,379:INFO:_internal.py:127.0.0.1 - - [20/Aug/2021 16:41:46] "[35m[1mGET /37.841828,55.747399 HTTP/1.1[0m" 500 -
-2021-08-20 16:42:40,339:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2021-08-20 16:42:40,340:INFO:_internal.py: * Restarting with stat
-2021-08-20 16:42:40,632:WARNING:_internal.py: * Debugger is active!
-2021-08-20 16:42:40,632:INFO:_internal.py: * Debugger PIN: 687-463-342
-2021-08-20 16:42:42,831:INFO:blueprint_view.py:logging...
-2021-08-20 16:42:42,832:INFO:_internal.py:127.0.0.1 - - [20/Aug/2021 16:42:42] "GET /37.841828,55.747399 HTTP/1.1" 200 -
-2021-08-20 16:43:09,519:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-20 16:43:09,542:INFO:_internal.py: * Restarting with stat
-2021-08-20 16:43:09,830:WARNING:_internal.py: * Debugger is active!
-2021-08-20 16:43:09,831:INFO:_internal.py: * Debugger PIN: 687-463-342
-2021-08-20 16:43:34,600:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2021-08-20 16:43:34,601:INFO:_internal.py: * Restarting with stat
-2021-08-20 16:43:34,859:WARNING:_internal.py: * Debugger is active!
-2021-08-20 16:43:34,860:INFO:_internal.py: * Debugger PIN: 687-463-342
-2021-08-20 16:43:36,987:INFO:blueprint_view.py:logging...
-2021-08-20 16:43:36,988:INFO:_internal.py:127.0.0.1 - - [20/Aug/2021 16:43:36] "GET /37.841828,55.747399 HTTP/1.1" 200 -
-2021-08-20 16:44:39,828:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-20 16:44:39,852:INFO:_internal.py: * Restarting with stat
-2021-08-20 16:44:40,140:WARNING:_internal.py: * Debugger is active!
-2021-08-20 16:44:40,141:INFO:_internal.py: * Debugger PIN: 687-463-342
-2021-08-20 16:44:46,379:INFO:_internal.py:127.0.0.1 - - [20/Aug/2021 16:44:46] "[35m[1mGET /37.841828,55.747399 HTTP/1.1[0m" 500 -
-2021-08-20 16:44:53,071:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2021-08-20 16:44:53,073:INFO:_internal.py: * Restarting with stat
-2021-08-20 16:44:53,378:WARNING:_internal.py: * Debugger is active!
-2021-08-20 16:44:53,378:INFO:_internal.py: * Debugger PIN: 687-463-342
-2021-08-20 16:44:55,559:INFO:_internal.py:127.0.0.1 - - [20/Aug/2021 16:44:55] "[35m[1mGET /37.841828,55.747399 HTTP/1.1[0m" 500 -
-2021-08-20 16:46:44,700:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-20 16:46:44,727:INFO:_internal.py: * Restarting with stat
-2021-08-20 16:46:45,007:WARNING:_internal.py: * Debugger is active!
-2021-08-20 16:46:45,007:INFO:_internal.py: * Debugger PIN: 687-463-342
-2021-08-20 16:46:48,639:INFO:_internal.py:127.0.0.1 - - [20/Aug/2021 16:46:48] "[35m[1mGET /37.841828,55.747399 HTTP/1.1[0m" 500 -
-2021-08-20 16:55:38,162:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-20 16:55:38,189:INFO:_internal.py: * Restarting with stat
-2021-08-20 16:55:38,487:WARNING:_internal.py: * Debugger is active!
-2021-08-20 16:55:38,488:INFO:_internal.py: * Debugger PIN: 687-463-342
-2021-08-20 16:55:42,755:INFO:blueprint_view.py:logging...
-2021-08-20 16:55:42,756:INFO:_internal.py:127.0.0.1 - - [20/Aug/2021 16:55:42] "GET /37.841828,55.747399 HTTP/1.1" 200 -
-2021-08-20 16:56:01,207:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-20 16:56:01,233:INFO:_internal.py: * Restarting with stat
-2021-08-20 16:56:01,471:WARNING:_internal.py: * Debugger is active!
-2021-08-20 16:56:01,472:INFO:_internal.py: * Debugger PIN: 687-463-342
-2021-08-20 16:56:08,810:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2021-08-20 16:56:08,812:INFO:_internal.py: * Restarting with stat
-2021-08-20 16:56:09,117:WARNING:_internal.py: * Debugger is active!
-2021-08-20 16:56:09,117:INFO:_internal.py: * Debugger PIN: 687-463-342
-2021-08-20 16:56:12,008:INFO:blueprint_view.py:[37.841812, 55.747393]
-2021-08-20 16:56:12,009:INFO:_internal.py:127.0.0.1 - - [20/Aug/2021 16:56:12] "GET /37.841828,55.747399 HTTP/1.1" 200 -
-2021-08-23 15:59:00,081:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2021-08-23 15:59:00,114:INFO:_internal.py: * Restarting with stat
-2021-08-23 15:59:00,492:WARNING:_internal.py: * Debugger is active!
-2021-08-23 15:59:00,544:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 15:59:04,129:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 15:59:04] "[35m[1mGET /37.841828,55.747399 HTTP/1.1[0m" 500 -
-2021-08-23 15:59:24,688:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 15:59:24,725:INFO:_internal.py: * Restarting with stat
-2021-08-23 15:59:25,111:WARNING:_internal.py: * Debugger is active!
-2021-08-23 15:59:25,112:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 15:59:27,975:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2021-08-23 15:59:27,976:INFO:_internal.py: * Restarting with stat
-2021-08-23 15:59:28,397:WARNING:_internal.py: * Debugger is active!
-2021-08-23 15:59:28,398:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 15:59:30,914:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 15:59:30] "GET /37.841828,55.747399 HTTP/1.1" 200 -
-2021-08-23 16:01:50,239:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:01:50,274:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:01:50,621:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:01:50,621:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:01:58,293:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2021-08-23 16:01:58,294:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:01:58,686:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:01:58,686:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:02:01,876:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:02:01] "GET /37.841828,55.747399 HTTP/1.1" 200 -
-2021-08-23 16:04:01,747:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:04:01,785:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:04:02,140:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:04:02,140:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:05:21,314:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:05:21,348:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:05:21,780:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:05:21,781:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:07:02,443:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:07:02] "GET /value1=37.842762,55.774558&value2=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:07:15,646:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:07:15,680:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:07:16,055:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:07:16,055:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:07:17,940:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:07:17] "GET /value1=37.842762,55.774558&value2=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:07:43,280:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:07:43,316:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:07:43,682:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:07:43,682:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:07:45,289:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:07:45] "GET /value1=37.842762,55.774558&value2=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:08:29,707:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:08:29,744:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:08:30,155:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:08:30,156:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:08:32,995:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:08:32] "GET /value1=37.842762,55.774558&value2=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:10:19,529:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:10:19,568:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:10:20,005:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:10:20,005:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:10:21,639:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:10:21] "GET /value1=37.842762,55.774558&value2=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:10:32,721:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:10:32,755:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:10:33,130:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:10:33,130:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:10:35,393:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:10:35] "GET /value1=37.842762,55.774558&value2=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:11:16,646:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:11:16] "GET /value1=37.842762,55.774558 HTTP/1.1" 200 -
-2021-08-23 16:11:26,504:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2021-08-23 16:11:26,506:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:11:26,871:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:11:26,871:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:11:28,800:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:11:28] "GET /value1=37.842762,55.774558 HTTP/1.1" 200 -
-2021-08-23 16:11:36,365:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:11:36,411:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:11:36,819:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:11:36,819:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:11:42,003:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:11:42] "GET /value=oi HTTP/1.1" 200 -
-2021-08-23 16:12:39,683:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:12:39,721:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:12:40,138:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:12:40,139:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:12:41,936:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:12:41] "[35m[1mGET /value=oi HTTP/1.1[0m" 500 -
-2021-08-23 16:13:35,524:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:13:35,565:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:13:35,963:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:13:35,963:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:13:38,127:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:13:38] "GET /value=oi HTTP/1.1" 200 -
-2021-08-23 16:13:50,801:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:13:50,849:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:13:51,275:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:13:51,275:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:13:52,052:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:13:52] "GET /value=oi HTTP/1.1" 200 -
-2021-08-23 16:15:03,326:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:15:03,361:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:15:03,719:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:15:03,719:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:15:07,962:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:15:08,006:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:15:08,389:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:15:08,389:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:15:09,287:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:15:09] "GET /value=oi HTTP/1.1" 200 -
-2021-08-23 16:17:06,043:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:17:06,077:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:17:24,367:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2021-08-23 16:17:24,369:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:17:24,725:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:17:24,725:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:17:26,264:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:17:26] "GET /value=oi HTTP/1.1" 200 -
-2021-08-23 16:19:40,201:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:19:40,236:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:19:40,629:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:19:40,629:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:19:43,753:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:19:43] "[33mGET /value=oi HTTP/1.1[0m" 404 -
-2021-08-23 16:19:50,463:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2021-08-23 16:19:50,464:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:19:50,832:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:19:50,833:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:19:53,470:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:19:53] "[33mGET /value=oi HTTP/1.1[0m" 404 -
-2021-08-23 16:20:31,618:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:20:31,661:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:20:32,056:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:20:32,057:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:20:37,192:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:20:37] "GET /index?value=oi HTTP/1.1" 200 -
-2021-08-23 16:20:44,804:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:20:44,845:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:20:45,260:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:20:45,261:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:20:48,302:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:20:48] "GET /?value=oi HTTP/1.1" 200 -
-2021-08-23 16:21:10,370:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:21:10,407:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:21:10,765:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:21:10,765:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:21:11,726:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:21:11] "GET /?value1=37.842762,55.774558&value2=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:24:46,371:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:24:46,407:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:24:46,808:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:24:46,808:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:25:01,529:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:25:01,569:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:25:21,144:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2021-08-23 16:25:21,145:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:25:21,560:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:25:21,561:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:25:22,804:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:25:22] "GET /?value1=37.842762,55.774558&value2=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:28:14,456:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:28:14,493:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:28:14,890:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:28:14,891:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:28:16,980:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:28:16] "[35m[1mGET /?value1=-9.58890301712257,39.6009946583093&value2=39.6009946583093,-8.56273059638958 HTTP/1.1[0m" 500 -
-2021-08-23 16:28:52,580:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:28:52,620:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:28:53,003:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:28:53,004:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:28:54,757:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:28:54] "GET /?value1=-9.58890301712257,39.6009946583093&value2=39.6009946583093,-8.56273059638958 HTTP/1.1" 200 -
-2021-08-23 16:43:27,961:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:43:27,999:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:43:28,396:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:43:28,396:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:43:30,444:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:43:30] "[35m[1mGET /?value1=-9.58890301712257,39.6009946583093&value2=39.6009946583093,-8.56273059638958 HTTP/1.1[0m" 500 -
-2021-08-23 16:43:47,331:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:43:47,374:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:43:47,751:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:43:47,752:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:43:49,354:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:43:49] "[33mGET /?value1=-9.58890301712257,39.6009946583093&value2=39.6009946583093,-8.56273059638958 HTTP/1.1[0m" 404 -
-2021-08-23 16:44:05,560:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:44:05,597:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:44:05,934:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:44:05,935:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:44:16,392:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:44:16,426:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:44:16,804:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:44:16,804:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:45:27,598:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:45:27,635:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:45:28,044:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:45:28,045:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:45:35,597:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:45:35] "GET /?from=-9.58890301712257,39.6009946583093&to=39.6009946583093,-8.56273059638958 HTTP/1.1" 200 -
-2021-08-23 16:45:55,284:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:45:55,323:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:45:55,673:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:45:55,673:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:46:35,283:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:46:35,319:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:46:35,711:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:46:35,711:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:46:37,680:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:46:37] "[35m[1mGET /?from=-9.58890301712257,39.6009946583093&to=39.6009946583093,-8.56273059638958 HTTP/1.1[0m" 500 -
-2021-08-23 16:48:41,641:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:48:41,682:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:48:42,081:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:48:42,081:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:51:06,935:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:51:06] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:52:03,159:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:52:03,200:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:52:03,603:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:52:03,604:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:52:07,327:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:52:07] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:52:34,944:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:52:34,987:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:52:35,379:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:52:35,380:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:52:38,115:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2021-08-23 16:52:38,116:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:52:38,527:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:52:38,527:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:52:40,908:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:52:40] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:52:41,623:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:52:41] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:53:17,172:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:53:17,210:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:53:17,570:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:53:17,571:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:53:33,223:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:53:33,258:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:53:33,645:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:53:33,645:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:57:42,821:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:57:42,863:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:57:43,299:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:57:43,299:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:57:44,412:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:57:44] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:57:58,018:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:57:58,059:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:57:58,465:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:57:58,465:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:57:59,206:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:57:59] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:58:11,040:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:58:11,079:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:58:11,446:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:58:11,446:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:58:20,065:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:58:20] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:58:53,418:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:58:53] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:59:06,716:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:59:06,754:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:59:07,179:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:59:07,180:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:59:08,530:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:59:08] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:59:09,845:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:59:09] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:59:10,218:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:59:10] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:59:11,724:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:59:11] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:59:12,255:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:59:12] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 16:59:33,348:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:59:33,383:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:59:33,782:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:59:33,783:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:59:41,234:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 16:59:41,269:INFO:_internal.py: * Restarting with stat
-2021-08-23 16:59:41,638:WARNING:_internal.py: * Debugger is active!
-2021-08-23 16:59:41,638:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 16:59:44,454:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 16:59:44] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 17:00:12,021:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:00:12,059:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:00:12,433:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:00:12,434:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:00:13,347:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:00:13] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 17:00:27,117:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:00:27,156:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:00:27,555:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:00:27,555:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:00:27,656:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:00:27] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 17:00:28,276:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:00:28] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 17:00:51,713:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:00:51,748:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:00:52,186:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:00:52,186:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:00:53,601:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:00:53] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 17:01:13,286:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:01:13] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 17:02:31,269:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:02:31,309:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:02:31,672:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:02:31,672:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:02:56,146:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:02:56] "[35m[1mGET /?from=-29.6906,-51.1429&to=-29.6391,-51.0077 HTTP/1.1[0m" 500 -
-2021-08-23 17:03:16,552:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:03:16,591:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:03:17,011:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:03:17,011:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:03:18,835:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:03:18] "[35m[1mGET /?from=-29.6906,-51.1429&to=-29.6391,-51.0077 HTTP/1.1[0m" 500 -
-2021-08-23 17:04:05,046:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:04:05,088:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:04:05,497:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:04:05,498:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:04:06,671:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:04:06] "GET /?from=-29.6906,-51.1429&to=-29.6391,-51.0077 HTTP/1.1" 200 -
-2021-08-23 17:04:21,305:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:04:21,341:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:04:21,721:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:04:21,721:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:04:22,114:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:04:22] "GET /?from=-29.6906,-51.1429&to=-29.6391,-51.0077 HTTP/1.1" 200 -
-2021-08-23 17:05:06,620:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:05:06,658:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:05:07,033:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:05:07,033:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:05:08,824:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:05:08] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 17:23:59,786:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:23:59,822:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:24:00,224:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:24:00,224:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:24:02,981:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:24:02] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 17:24:32,684:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:24:32,721:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:24:33,107:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:24:33,108:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:25:22,360:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:25:22,394:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:25:22,786:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:25:22,786:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:28:31,583:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:28:31,618:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:28:32,039:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:28:32,039:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:28:36,023:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2021-08-23 17:28:36,024:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:28:36,433:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:28:36,433:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:28:38,642:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:28:38] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 17:28:52,313:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:28:52,352:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:28:52,705:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:28:52,706:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:29:21,982:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:29:21] "[35m[1mGET /?from=brazil&to=portugal HTTP/1.1[0m" 500 -
-2021-08-23 17:29:50,285:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:29:50,324:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:29:50,714:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:29:50,714:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:29:52,261:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:29:52] "GET /?from=brazil&to=portugal HTTP/1.1" 200 -
-2021-08-23 17:30:03,321:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:30:03,359:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:30:03,791:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:30:03,792:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:30:05,306:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:30:05] "GET /?from=brazil&to=portugal HTTP/1.1" 200 -
-2021-08-23 17:30:15,395:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:30:15,430:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:30:15,777:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:30:15,778:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:31:19,257:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:31:19,291:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:31:19,699:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:31:19,699:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:31:35,402:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:31:35,437:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:31:35,761:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:31:35,762:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:33:11,696:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:33:11,734:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:33:12,145:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:33:12,146:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:33:14,372:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:33:14] "GET /?from=brazil&to=portugal HTTP/1.1" 200 -
-2021-08-23 17:34:17,897:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:34:17,931:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:34:18,346:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:34:18,346:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:34:57,086:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:34:57,125:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:36:16,189:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2021-08-23 17:36:16,191:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:36:16,582:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:36:16,582:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:36:18,864:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:36:18] "GET /?from=brazil&to=portugal HTTP/1.1" 200 -
-2021-08-23 17:36:33,998:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:36:33] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 17:48:24,889:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:48:24,927:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:48:25,333:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:48:25,334:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:48:27,822:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:48:27] "[35m[1mGET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1[0m" 500 -
-2021-08-23 17:48:32,690:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:48:32,735:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:48:33,093:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:48:33,093:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:48:36,997:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2021-08-23 17:48:36,998:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:48:37,417:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:48:37,417:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:48:38,647:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:48:38] "GET /?from=37.842762,55.774558&to=37.842789,55.76522 HTTP/1.1" 200 -
-2021-08-23 17:49:19,230:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:49:19,268:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:49:19,590:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:49:19,591:INFO:_internal.py: * Debugger PIN: 207-583-452
-2021-08-23 17:49:34,455:INFO:blueprint_view.py:The distance from brazil to portugal is 7041
-2021-08-23 17:49:34,455:INFO:_internal.py:127.0.0.1 - - [23/Aug/2021 17:49:34] "GET /?from=brazil&to=portugal HTTP/1.1" 200 -
-2021-08-23 17:49:54,152:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
-2021-08-23 17:49:54,190:INFO:_internal.py: * Restarting with stat
-2021-08-23 17:49:54,577:WARNING:_internal.py: * Debugger is active!
-2021-08-23 17:49:54,577:INFO:_internal.py: * Debugger PIN: 207-583-452
+2021-08-24 16:41:36,181:INFO:_internal.py:127.0.0.1 - - [24/Aug/2021 16:41:36] "[35m[1mGET /Novokhokhlovskaya HTTP/1.1[0m" 500 -
+2021-08-24 16:41:46,077:INFO:_internal.py:127.0.0.1 - - [24/Aug/2021 16:41:46] "[35m[1mGET /novokhokhlovskaya HTTP/1.1[0m" 500 -
+2021-08-24 16:42:24,934:INFO:blueprint_view.py:The distance from Moscow Ring Road to Даниловский+район is 2287 km
+2021-08-24 16:42:24,935:INFO:_internal.py:127.0.0.1 - - [24/Aug/2021 16:42:24] "GET /Даниловский+район HTTP/1.1" 200 -
+2021-08-24 16:42:33,980:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-24 16:42:33,981:INFO:_internal.py: * Restarting with stat
+2021-08-24 16:42:34,421:WARNING:_internal.py: * Debugger is active!
+2021-08-24 16:42:34,421:INFO:_internal.py: * Debugger PIN: 144-997-131
+2021-08-24 16:42:35,689:INFO:blueprint_view.py:The distance from Moscow Ring Road to Даниловский+район is 2287 km
+2021-08-24 16:42:35,690:INFO:_internal.py:127.0.0.1 - - [24/Aug/2021 16:42:35] "GET /Даниловский+район HTTP/1.1" 200 -
+2021-08-24 16:42:49,211:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
+2021-08-24 16:42:49,254:INFO:_internal.py: * Restarting with stat
+2021-08-24 16:42:49,691:WARNING:_internal.py: * Debugger is active!
+2021-08-24 16:42:49,691:INFO:_internal.py: * Debugger PIN: 144-997-131
+2021-08-24 16:42:51,357:INFO:blueprint_view.py:The distance from Moscow Ring Road to Даниловский+район is 2287 km
+2021-08-24 16:42:51,358:INFO:_internal.py:127.0.0.1 - - [24/Aug/2021 16:42:51] "GET /Даниловский+район HTTP/1.1" 200 -
+2021-08-24 16:43:11,609:INFO:_internal.py:127.0.0.1 - - [24/Aug/2021 16:43:11] "GET /55.71048028501492,%2037.61884582077968 HTTP/1.1" 200 -
+2021-08-24 16:45:55,846:INFO:blueprint_view.py:The distance from Moscow Ring Road to Москва+Товарная is 2417 km
+2021-08-24 16:45:55,847:INFO:_internal.py:127.0.0.1 - - [24/Aug/2021 16:45:55] "GET /Москва+Товарная HTTP/1.1" 200 -
+2021-08-24 16:46:25,909:INFO:_internal.py:127.0.0.1 - - [24/Aug/2021 16:46:25] "GET /55.75553699762996,%2037.69090183877597 HTTP/1.1" 200 -
+2021-08-24 16:48:59,142:INFO:blueprint_view.py:The distance from Moscow Ring Road to Moscou+Москва is 2425 km
+2021-08-24 16:48:59,143:INFO:_internal.py:127.0.0.1 - - [24/Aug/2021 16:48:59] "GET /Moscou+Москва HTTP/1.1" 200 -
+2021-08-24 16:49:25,271:INFO:_internal.py:127.0.0.1 - - [24/Aug/2021 16:49:25] "GET /55.83239659255008,%2037.64516793892188 HTTP/1.1" 200 -
+2021-08-24 16:51:23,956:INFO:blueprint_view.py:The distance from Moscow Ring Road to район+Марьина+роща is 2424 km
+2021-08-24 16:51:23,956:INFO:_internal.py:127.0.0.1 - - [24/Aug/2021 16:51:23] "GET /район+Марьина+роща HTTP/1.1" 200 -
+2021-08-24 16:51:40,806:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
+2021-08-24 16:51:40,852:INFO:_internal.py: * Restarting with stat
+2021-08-24 16:51:41,284:WARNING:_internal.py: * Debugger is active!
+2021-08-24 16:51:41,284:INFO:_internal.py: * Debugger PIN: 144-997-131
+2021-08-24 16:51:42,033:INFO:blueprint_view.py:The distance from Moscow Ring Road to район+Марьина+роща is 2403 km
+2021-08-24 16:51:42,034:INFO:_internal.py:127.0.0.1 - - [24/Aug/2021 16:51:42] "GET /район+Марьина+роща HTTP/1.1" 200 -
+2021-08-24 16:51:51,839:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
+2021-08-24 16:51:51,878:INFO:_internal.py: * Restarting with stat
+2021-08-24 16:51:52,287:WARNING:_internal.py: * Debugger is active!
+2021-08-24 16:51:52,287:INFO:_internal.py: * Debugger PIN: 144-997-131
+2021-08-24 16:51:54,399:INFO:blueprint_view.py:The distance from Moscow Ring Road to район+Марьина+роща is 26 km
+2021-08-24 16:51:54,400:INFO:_internal.py:127.0.0.1 - - [24/Aug/2021 16:51:54] "GET /район+Марьина+роща HTTP/1.1" 200 -
+2021-08-24 16:52:04,959:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
+2021-08-24 16:52:05,001:INFO:_internal.py: * Restarting with stat
+2021-08-24 16:52:05,431:WARNING:_internal.py: * Debugger is active!
+2021-08-24 16:52:05,431:INFO:_internal.py: * Debugger PIN: 144-997-131
+2021-08-24 16:52:06,738:INFO:blueprint_view.py:The distance from Moscow Ring Road to район+Марьина+роща is 15 km
+2021-08-24 16:52:06,739:INFO:_internal.py:127.0.0.1 - - [24/Aug/2021 16:52:06] "GET /район+Марьина+роща HTTP/1.1" 200 -
+2021-08-24 16:52:15,054:INFO:_internal.py:127.0.0.1 - - [24/Aug/2021 16:52:15] "GET /55.796785499215694,%2037.59456773128932 HTTP/1.1" 200 -
+2021-08-24 16:52:34,916:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
+2021-08-24 16:52:34,956:INFO:_internal.py: * Restarting with stat
+2021-08-24 16:52:35,332:WARNING:_internal.py: * Debugger is active!
+2021-08-24 16:52:35,332:INFO:_internal.py: * Debugger PIN: 144-997-131
+2021-08-24 16:52:36,852:INFO:_internal.py:127.0.0.1 - - [24/Aug/2021 16:52:36] "GET /55.796785499215694,%2037.59456773128932 HTTP/1.1" 200 -
