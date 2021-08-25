@@ -1,6 +1,6 @@
-from turfpy.measurement import boolean_point_in_polygon
-from geojson import Point, Polygon, Feature
+from geojson import Polygon
 
+# creating the polygon of mkad
 polygon = Polygon(
     [
         [

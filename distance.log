@@ -47,3 +47,55 @@
 2021-08-24 16:52:35,332:WARNING:_internal.py: * Debugger is active!
 2021-08-24 16:52:35,332:INFO:_internal.py: * Debugger PIN: 144-997-131
 2021-08-24 16:52:36,852:INFO:_internal.py:127.0.0.1 - - [24/Aug/2021 16:52:36] "GET /55.796785499215694,%2037.59456773128932 HTTP/1.1" 200 -
+2021-08-25 16:48:31,772:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-25 16:50:30,443:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-25 16:50:48,298:ERROR:app.py:Exception on /brazil [GET]
+Traceback (most recent call last):
+  File "/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/.venv/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/.venv/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/.venv/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/.venv/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py", line 59, in distante
+    list2.append(response['features'][0]['center'][0])
+KeyError: 'features'
+2021-08-25 16:50:48,300:INFO:_internal.py:127.0.0.1 - - [25/Aug/2021 16:50:48] "[35m[1mGET /brazil HTTP/1.1[0m" 500 -
+2021-08-25 16:50:59,590:ERROR:app.py:Exception on /55.796785499215694, 37.59456773128932bra [GET]
+Traceback (most recent call last):
+  File "/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/.venv/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/.venv/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/.venv/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/.venv/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py", line 49, in distante
+    point = Feature(geometry=Point((float(list2[0]), float(list2[1]))))
+ValueError: could not convert string to float: ' 37.59456773128932bra'
+2021-08-25 16:50:59,590:INFO:_internal.py:127.0.0.1 - - [25/Aug/2021 16:50:59] "[35m[1mGET /55.796785499215694,%2037.59456773128932bra HTTP/1.1[0m" 500 -
+2021-08-25 16:51:13,125:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-25 16:51:13,137:INFO:_internal.py: * Restarting with stat
+2021-08-25 16:51:13,556:WARNING:_internal.py: * Debugger is active!
+2021-08-25 16:51:13,606:INFO:_internal.py: * Debugger PIN: 113-189-203
+2021-08-25 16:52:02,658:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-25 16:52:02,660:INFO:_internal.py: * Restarting with stat
+2021-08-25 16:52:03,086:WARNING:_internal.py: * Debugger is active!
+2021-08-25 16:52:03,087:INFO:_internal.py: * Debugger PIN: 113-189-203
+2021-08-25 16:52:51,239:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
+2021-08-25 16:52:51,279:INFO:_internal.py: * Restarting with stat
+2021-08-25 16:53:00,858:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-25 16:53:00,860:INFO:_internal.py: * Restarting with stat
+2021-08-25 16:53:01,238:WARNING:_internal.py: * Debugger is active!
+2021-08-25 16:53:01,239:INFO:_internal.py: * Debugger PIN: 113-189-203
+2021-08-25 16:53:16,983:INFO:_internal.py: * Detected change in '/media/fabio/00C2DCA2C2DC9D6A/projetos/Pessoal/flask-task/src/blueprint_view.py', reloading
+2021-08-25 16:53:17,020:INFO:_internal.py: * Restarting with stat
+2021-08-25 16:53:17,423:WARNING:_internal.py: * Debugger is active!
+2021-08-25 16:53:17,423:INFO:_internal.py: * Debugger PIN: 113-189-203
+2021-08-25 16:58:10,297:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-25 16:58:10,301:INFO:_internal.py: * Restarting with stat
+2021-08-25 16:58:17,180:INFO:_internal.py: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-25 16:58:17,183:INFO:_internal.py: * Restarting with stat
