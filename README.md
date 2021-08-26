@@ -10,6 +10,7 @@ A Flask blueprint developed to the Test Task
 - [Running Tests](#running-tests)
 - [Docker](#docker)
 - [Documentation](#documentation)
+- [.ENV File](#.env-file)
 - [Author](#author)
 
 ## Installation
@@ -40,7 +41,7 @@ To start the App
 
 ## Running Tests
 
-To run tests, run the following command
+To run the tests, run the following command
 
 ```bash
   pytest
@@ -98,6 +99,10 @@ For being outside the MKAD, the blueprint will calculate and add to `distance.lo
 ```bash
   2021-08-25 17:49:58,199:INFO:blueprint_view.py:The distance from Moscow Ring Road to 51.50173484532344, -0.1254902875175711 is 2515 km
 ```
+
+## .ENV file
+
+Inside the .env file you will se an empty `API_TOKEN` variable. Please put your Yandex Geocoder API Token inside this variable.
 
 ## Author
 
