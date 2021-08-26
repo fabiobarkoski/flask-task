@@ -9,7 +9,7 @@ A Flask blueprint developed to the Test Task
 - [Installation](#installation)
 - [Running Tests](#running-tests)
 - [Docker](#docker)
-- [DOcumentation](#documentation)
+- [Documentation](#documentation)
 - [Author](#author)
 
 ## Installation

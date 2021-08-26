@@ -1,4 +1,6 @@
 .venv
-/src/__pycache__
 distance.log
+/src/__pycache__
 /src/distance.log
+/tests/__pycache__
+.pytest_cache

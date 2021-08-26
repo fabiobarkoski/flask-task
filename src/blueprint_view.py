@@ -3,7 +3,7 @@ from flask import Blueprint
 from turfpy.measurement import boolean_point_in_polygon
 from geojson import Point, Feature
 # importing the mkad polygon to check with the point
-from mkad_polygon import polygon
+from src.mkad_polygon import polygon
 # importing the numpy to create the calc_distance function
 import numpy as np
 import requests
@@ -55,10 +55,10 @@ def distante(adress):
 
     # boolean variable
     bol = 0
-
+    
     # checking if the parameter is coordinate
     # or adress
-    if ',' in adress:
+    if adress.lower().islower() is False:
         # if coordinate split the string on a list
         coord_list = adress.split(',')
         # then append the values on the list2
@@ -66,7 +66,6 @@ def distante(adress):
         list2.append(coord_list[1])
         # create a point to check on mkad polygon
         point = Feature(geometry=Point((float(list2[0]), float(list2[1]))))
-        print(boolean_point_in_polygon(point, polygon))
         # if the point is inside polygon mkad then add 1 to bol variable
         if boolean_point_in_polygon(point, polygon) is True:
             bol += 1
@@ -75,15 +74,15 @@ def distante(adress):
         # if not a coordinate
         # search on the api
         r = requests.get(
-            f'https://api.mapbox.com/geocoding/v5/mapbox.places/{adress}.json?access_token={API_TOKEN}')
+            f'https://geocode-maps.yandex.ru/1.x/?apikey={API_TOKEN}&format=json&geocode={adress}&lang=en-US')
         # get the response
         response = r.json()
         # append the coordinate of the adress on list2
-        list2.append(response['features'][0]['center'][0])
-        list2.append(response['features'][0]['center'][1])
+        response_list = response['response']['GeoObjectCollection']['featureMember'][0]['GeoObject']['Point']['pos'].split(' ')
+        list2.append(response_list[1])
+        list2.append(response_list[0])
         # create a point to check on mkad polygon
         point = Feature(geometry=Point((float(list2[0]), float(list2[1]))))
-        print(boolean_point_in_polygon(point, polygon))
         # if the point is inside polygon mkad then add 1 to bol variable
         if boolean_point_in_polygon(point, polygon) is True:
             bol += 1
